@@ -38,11 +38,10 @@ main {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  z-index: -1;
 }
 section {
-  border: solid 1px blue;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,11 +49,11 @@ section {
   backdrop-filter: blur(10px);
 }
 
-div {
+/* div {
   border: solid 1px red;
-}
+} */
 #cochon {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   width: 100%;
   height: 100%;
@@ -63,9 +62,9 @@ div {
   display: flex;
   flex-direction: column;
   width: auto;
-  font-size: 25px;
+  font-size: 2rem;
   position: absolute;
-  top: 1%;
+  top: 5%;
   left: 1%;
 }
 .rep {
@@ -81,13 +80,12 @@ div {
 .view0 {
   margin: 0;
   padding: 0;
-  border: solid 1px yellow;
   width: 80%;
   height: auto;
 }
 .view1 {
   border: none;
-  width: 55%;
+  width: auto;
   height: 15%;
   display: flex;
   flex-direction: column;
@@ -143,20 +141,24 @@ div {
   border-radius: 50px;
 }
 input {
-  width: auto;
+  width: 100%;
   height: auto;
   font-size: 30px;
   text-align: center;
 }
+
+
 .clavier {
   width: 90%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .clavier2 {
   width: 95%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .btnGame {
   width: 40px;
@@ -176,7 +178,7 @@ input {
     /*S B D*/ 50% 75%,
     /* I B*/ 20% 100%,
     /*S B G*/ 30% 65% /*I B G*/
-  );
+    );
 }
 .bt5 {
   width: 5.7%;
@@ -199,7 +201,7 @@ input {
 .bt4 {
   border: solid 1px rgba(255, 255, 255, 0.041);
   border-radius: 50px;
-
+  
   position: absolute;
   top: 5%;
   left: 95%;
@@ -227,4 +229,4 @@ input {
   height: 40px;
   background-color: black;
 }
-  
+border: solid 10px blue;
